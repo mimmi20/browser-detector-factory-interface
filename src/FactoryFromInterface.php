@@ -40,12 +40,19 @@ namespace BrowserDetector\Factory;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-interface FactoryInterface
+interface FactoryFromInterface
 {
     /**
-     * @param string $useragent
+     * @param array $data
      *
      * @return mixed
      */
-    public function detect($useragent);
+    public function fromArray(array $data);
+
+    /**
+     * @param string $json
+     *
+     * @return mixed
+     */
+    public function fromJson($json);
 }
