@@ -25,5 +25,5 @@ interface FactoryFromInterface
      *
      * @return mixed
      */
-    public function fromJson($json);
+    public function fromJson(string $json);
 }
